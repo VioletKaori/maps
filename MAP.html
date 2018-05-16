@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>瓦片地图</title>
+</head>
+<body>
+<script src="js/Mercator.js"></script>
+<script src="js/osmLoader.js"></script>
+<!--<form >-->
+<div id="input">
+    经度:<input type="text" id="longitude" value="114">
+    <br>
+    纬度:<input type="text" id="latitude" value="32">
+    <br>
+    <button id="button" type="submit"  onclick="draw()">确定</button>
+    <!--</form>-->
+</div>
+<div id="zoom">
+    <button id="plus" type="submit" onclick="enlarge()">增加</button>
+    <button id="minus" type="submit" onclick="reduce()">减少</button>
+</div>
+<div id="context">
+    <canvas id="map" width="1400" height="800"></canvas>
+</div>
+</body>
+</html>
